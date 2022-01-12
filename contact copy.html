@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Contact Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html"> me </a></li>
+							<li class="active"><a href="contact.html"> contact </a></li>
+							<li><a href="coming_soon.html"> coming soon ... </a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://linkedin.com/in/cadercrow" class="icon brands fa-linkedin"><span class="label"></span></a></li>
+							<li><a href="https://github.com/cadecrow" target="_blank" class="icon brands alt fa-github"><span class="label"></span></a></li>
+							<li><a href="https://medium.com/@cadecrow" target="_blank" class="icon brands alt fa-medium"><span class="label"></span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- BUG - FIGURE OUT HOW TO DO BUSINESS INQUIRIES THROUGH THIS FORM
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						-->
+
+						<!-- BUG - attach action to links-->
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p><a class="contact" href="tel:+1 214 707 9047" target="_blank">+1 (214) 707-9047</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<form method="POST" action="email-form-handler.php">
+									<div class="field" style="margin: 2rem"><label class="label" for="name">Your Name</label>
+										<input id="name" type="text" class="input">
+									</div>
+									<div class="field" style="margin: 2rem"><label class="label" for="email">Your Email Address</label>
+										<input id="email" type="text" class="input">
+									</div>
+									<div class="field" style="margin: 2rem"><label class="label" for="message">Email Body</label>
+										<textarea class="textarea" id="message">Hello Mr. Crow,</textarea>
+									</div>
+									<div style="margin: 2rem"><input type="submit" value="Send Email" class="button is-primary"></div>
+								</form>							
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script language="JavaScript">
+			var frmvalidator  = new Validator("contactform");
+			frmvalidator.addValidation("name","req","Please provide your name");
+			frmvalidator.addValidation("email","req","Please provide your email");
+			frmvalidator.addValidation("email","email",
+			  "Please enter a valid email address");
+			</script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+	</body>
+</html>
